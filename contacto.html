@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+		<script type="text/javascript" src="javascript/validar.js"></script>
+		<script type="text/javascript" src="javascript/funciones_js.js"></script>
+		<title>IM - Cont&aacute;ctanos</title>
+	</head>
+	<body>
+		<div class="contenedor">
+			
+			<div class="cabecera">
+				<div class="titulo">
+					<a href="home.html">
+						<div id="superior">
+							Madelon 
+						</div>
+						<div id="inferior">
+							Inmobiliaria
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="enlaces">
+				<a href="home.html">Home</a>				
+				<a href="quienessomos.html">Quienes Somos</a>				
+				<a href="comollegar.html">C&oacute;mo llegar</a>	
+				<a>Contacto</a>
+				<a href="PHP/consultasBusqueda.php?page=1">Hogares</a>		
+			</div>
+			<div class='barra' id='contact'></div>
+			<div class="cuerpo">
+				<div class="lateral">
+<pre>Lo invitamos a contactarse
+con nosotros por la v&iacute;a que usted
+prefiera, para brindarle nuestros
+servicios y asesoramiento.</pre>
+					<p>Personalmente</p>
+<pre>En nuestras oficinas
+Calle 50 y 120 - La Plata
+Horario de atenci&oacute;n:
+  Lunes a Viernes
+  de 8 a 18 hs.</pre>
+					<p>Telef&oacute;nicamente</p>
+					<ul>
+						<li>Tel 1: 427-7270</li>
+						<li>Tel 2: 427-7271</li>
+					</ul>
+					<p>Fax:</p>	
+					<ul>
+						<li><p>423-0124</p></li>
+					</ul>
+				</div>
+			
+				<form name="formulario" action="contacto.html" method="post" onsubmit=" validarCampos()"> 
+					<fieldset>
+						<legend>Mensaje</legend>
+						<div class="form">
+							<label for="name">*Nombre:</label>                   
+							<input type="text" name="nombre" size="10" id="name" />               
+						</div>
+						<div class="form">
+							<label for="firsname">*Apellido:</label>
+							<input type="text" name="apellido"size="10" id="lastname"/>       
+						</div>
+						<div class="form">	
+							<label for="telefono"> Tel&eacute;fono:</label>
+							<input type="text" name="telefono" size="10"id="telephone"/>
+						</div>
+						<div class="form">	
+							<label for="email">*E-mail:</label>
+							<input type="text" name="email" size="30" id="email" value="@"/>
+						</div>
+							
+						<div class="radio">	
+							<label for="motivo">Motivo: </label>
+							<ul>
+								<li>
+									<input type="radio" name="motivo" id="venta">
+										Venta
+									</input>
+								</li>
+								<li>
+									<input type="radio" name="motivo"  id="tasaciones">
+										Tasaci&oacute;n
+									</input>
+								</li>
+								<li>
+									<input type="radio" name="motivo"  id="alquiler">
+										Alquiler
+									</input>
+								</li>
+								<li>
+									<input type="radio" name="motivo"  id="otro" checked="checked">
+										Otro
+									</input>
+								</li>
+							</ul>
+						</div>
+						<div class="tmñ">	
+							<label for="rooms">N&deg de Ambientes:</label>
+							<input type="text" name="numero" size="7" id="rooms"/>
+							<label for="surface">Superficie en m<sup>2:</label>
+							<input type="text" name="metros" size="7" id="surface"/>
+						</div>
+						<div class="form"> 
+							<textarea name="mensaje" id="dato" rows="8" cols="40" onKeyUp="valida_longitud(300)" onclick="formulario.mensaje.value=''" >Escriba su consulta...</textarea>
+						</div>
+						<input type="submit" value="Enviar">
+						<input type="reset" value="Borrar">
+						<p>(*)&nbsp;Campos&nbsp;obligatorios</p>
+					</fieldset>						
+				</form>
+			</div>
+				
+			<div id="footer">
+				<div id="piedepagina">Inmobiliaria&nbsp;Madelon :: Direcci&oacute;n: Calle 50 y 120 :: Horario: Lun. a Vie. de 8 a 18hs. </div>
+				<div class="imgFooter">
+					<a href="http://www.facebook.com/"  onMouseOver = "entra('boton2');" onMouseOut = "sale('boton2');"><img src="image/fa.png" name="boton2"></a> 
+					<a href="http://twitter.com/"  onMouseOver = "entra('boton3');" onMouseOut = "sale('boton3');"><img src="image/tu.png" name="boton3" ></a>
+				</div>
+				<div id="piedepaginamini"> Copyright &copy;2011 - Todos los derechos reservados</div>
+			</div>
+		</div>
+	</body>
+</html>

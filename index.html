@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+		<script type="text/javascript" src="javascript/funciones_js.js"></script>
+		<title>IM - Inicio</title>
+	</head>
+	<body>
+		<div class="contenedor">
+			<div class="cabecera">
+				<div class="titulo">
+					<a href="home.html">
+						<div id="superior">
+							Madelon 
+						</div>
+						<div id="inferior">
+							Inmobiliaria
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="enlaces">
+					<a href="home.html">Home</a>				
+					<a href="quienessomos.html">Quienes Somos</a>				
+					<a href="comollegar.html">C&oacute;mo llegar</a>				
+					<a href="contacto.html">Contacto</a>
+					<a href="PHP_PDO/consultasBusqueda.php?page=1">Hogares</a>	
+			</div>
+
+			<div class='pasarImg2'>
+					<img src="image/destacados/destacados4.jpg" width="855" height="355" name="photoslider">
+					<form method="POST" name="rotater"> 
+						<div id='boton1'>
+							<input type="button" value="<<" name="B2" onClick="backward()">
+						</div>
+						<div id='boton2'>
+							<input type="button" value=">>" name="B1" onClick="forward()"> 
+						</div>
+					</form> 
+				
+			</div>
+			
+			<div class='barra' id='home'></div>
+			
+				<div class="text">
+					<p>
+						 La importancia que otorgamos a nuestros emprendimientos avalan la idea
+						de ser una empresa l&iacute;der en el sector inmobiliario de la ciudad de La Plata.
+					</p>
+					<p>
+						 Somos una organizaci&oacute;n de vanguardia que se preocupa por la continua adaptaci&oacute;n
+						de sus servicios, desarrollando y evaluando proyectos de inversi&oacute;n inmobiliarios,
+						con el objetivo de ofrecer la m&aacute;s amplia gama de posibilidades a nuestros clientes.         
+					</p>	 
+				
+					<p>	 
+						 Madelon Inmobiliaria incorpora en forma permanente nuevos proyectos inmobiliarios.
+					</p>
+					<p>	
+						Opci&oacute;n de inversi&oacute;n al inicio de obra, en construcci&oacute;n o con las unidades
+						listas para habitar.
+					</p>
+					<p>
+						 Negocio de pozo o primera vivienda.
+					</p>	 
+					<p>
+						 Edificios a estrenar en las mejores zonas y m&aacute;s buscadas de la ciudad.						
+					</p>
+				</div>
+			
+
+			
+			<div id="footer">
+				<div id="piedepagina">Inmobiliaria&nbsp;Madelon :: Direcci&oacute;n: Calle 50 y 120 :: Horario: Lun. a Vie. de 8 a 18hs. </div>
+				<div class="imgFooter">
+					<a href="http://www.facebook.com/"  onMouseOver = "entra('boton2');" onMouseOut = "sale('boton2');"><img src="image/fa.png" name="boton2"></a> 
+					<a href="http://twitter.com/"  onMouseOver = "entra('boton3');" onMouseOut = "sale('boton3');"><img src="image/tu.png" name="boton3" ></a>
+				</div>
+				<div id="piedepaginamini"> Copyright &copy;2011 - Todos los derechos reservados</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
